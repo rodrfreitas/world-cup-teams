@@ -48,18 +48,36 @@ header {
   cursor: pointer;
 }
 
+
+
 .characters li h5 {
   color: white;
   padding: 12px 8px;
 }
 
-/* .characters li a { text-decoration: none; } */
+
+.characters li a::after
+{ 
+  text-decoration: none;
+    content: "\2713";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    border: 4px solid #20b320;
+    position: absolute;
+    font-size: 1.5em;
+
+    animation: fadeIn 0.7s;
+
+}
 
 .red_bumper {
   width: 100%;
   height: 6px;
   background-color: red;
 }
+
 
 article { 
   padding: 20px;
@@ -183,18 +201,18 @@ input[type="checkbox"]:checked + span::after {
   to { opacity: 1;}
 }
 
-#lightBoxBrazil{
+#lightboxBrazil{
   background-image: url("../images/brazil_bg.png");
 }
 
-#lightTunisia{
+#lightboxTunisia{
   background-image: url("../images/tunisia_bg.png");
 }
 
-#lightGhana{
+#lightboxGhana{
   background-image: url("../images/ghana_bg.png");
 }
 
-#lightBoxCanada{
+#lightboxCanada{
   background-image: url("../images/canada_bg.png");
 }
